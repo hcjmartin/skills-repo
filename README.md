@@ -1,13 +1,13 @@
-# skills-test
+# skills-repo
 
 A private collection of agent skills, installable with the [Skills CLI](https://skills.sh):
 
 ```bash
-npx skills add hcjmartin-work/skills-test
+npx skills add hcjmartin/skills-repo
 ```
 
 > This is a **private** repository. Any machine or CI job installing from it must be
-> authenticated to GitHub (e.g. `gh auth login`) with access to `hcjmartin-work`.
+> authenticated to GitHub (e.g. `gh auth login`) with access to `hcjmartin`.
 
 ## Skills in this collection
 
