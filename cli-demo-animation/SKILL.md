@@ -1,6 +1,6 @@
 ---
 name: cli-demo-animation
-description: Records authentic, colour-faithful terminal demos as asciinema casts and GIFs. Use for CLI walkthroughs, README animations, scripted prompt flows, realistic typing and pasting, local-build demonstrations, cast editing, or GIF rendering and verification.
+description: Produces polished, publication-ready CLI demo animations for READMEs, docs, release notes, and launch posts — authentic, colour-faithful asciinema casts and GIFs. Use when asked to record, edit, or verify a terminal demo: CLI walkthroughs, scripted prompt flows, realistic typing and pasting, local-build demonstrations, cast editing, or GIF rendering.
 license: MIT
 compatibility: Requires asciinema 3.x, expect, agg, ffmpeg, and Node.js
 ---
