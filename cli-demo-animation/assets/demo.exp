@@ -1,0 +1,53 @@
+#!/usr/bin/expect -f
+# Copy and adapt this driver. Display the project's canonical user command while
+# running the actual executable under review.
+set timeout 300
+
+proc prompt {{label "terminal"}} {
+  send_user -- "\033\[32m${label}\$\033\[0m "
+}
+
+proc type_text {text} {
+  foreach ch [split $text ""] {
+    send_user -- $ch
+    after 16
+  }
+}
+
+proc paste_text {text} {
+  send_user -- $text
+  after 250
+}
+
+proc press_enter {} {
+  send_user -- "\n"
+  after 500
+}
+
+proc run_cmd {arglist} {
+  log_user 0
+  spawn -noecho env \
+    -u NO_COLOR \
+    -u FORCE_COLOR \
+    -u CI \
+    TERM=xterm-256color \
+    COLORTERM=truecolor \
+    NODE_OPTIONS= \
+    {*}$arglist
+  log_user 1
+  expect {
+    -re {\[y/N\]} { after 1000; send -- "y\r"; exp_continue }
+    eof {}
+  }
+  after 900
+}
+
+# Example: type the familiar prefix, paste the long value, then execute the
+# corresponding local build. Replace these placeholders in the copied driver.
+# set manifest_url "https://example.com/manifests/demo-manifest.json"
+# set local_cli "/absolute/path/to/local/cli.mjs"
+# prompt
+# type_text "npx @scope/package add "
+# paste_text $manifest_url
+# press_enter
+# run_cmd [list node $local_cli add $manifest_url]
