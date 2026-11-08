@@ -1,6 +1,7 @@
 ---
 name: "comparison-content"
 description: "Use when writing, auditing or updating public competitor comparison content (pages, blog posts or articles): X vs Y, alternatives, \"best X tools\" roundups and feature tables, including fairness reviews and keeping pricing and features current."
+license: MIT
 ---
 
 # Comparison content that stays fair and stays accurate
@@ -166,4 +167,4 @@ You won't reach a final form, and you'll get things wrong. Start anyway. Be fair
 
 ## Source
 
-Adapted from: https://posthog.com/blog/comparison-content-guide.md
+Adapted from: https://posthog.com/blog/comparison-content-guide.md (MIT-licensed source material, copyright PostHog Inc.). See `LICENSE` for full terms.
