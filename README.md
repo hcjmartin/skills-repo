@@ -25,7 +25,7 @@ original license file — those terms govern use of that skill.
 | `skill-creator` | [anthropics/skills](https://github.com/anthropics/skills) | Apache-2.0 (`skill-creator/LICENSE.txt`) |
 | `markdown-documentation` | [aj-geddes/useful-ai-prompts](https://github.com/aj-geddes/useful-ai-prompts) | MIT (`markdown-documentation/LICENSE`) |
 | `skill-authoring-workflow` | [deanpeters/product-manager-skills](https://github.com/deanpeters/product-manager-skills) | **CC BY-NC-SA 4.0** (`skill-authoring-workflow/LICENSE`) |
-| `comparison-content` | Original skill, adapted from [PostHog's comparison content guide](https://posthog.com/blog/comparison-content-guide) | No license file (source link in `SKILL.md`) |
+| `comparison-content` | Original skill, adapted from [PostHog's comparison content guide](https://posthog.com/blog/comparison-content-guide) | MIT (`comparison-content/LICENSE`) |
 
 > ⚠️ **`skill-authoring-workflow` is licensed CC BY-NC-SA 4.0 (NonCommercial + ShareAlike).**
 > It may be used for private/personal purposes only. Commercial use is not permitted, and any
